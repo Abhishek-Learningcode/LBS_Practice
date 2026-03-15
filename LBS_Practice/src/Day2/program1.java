@@ -1,0 +1,23 @@
+package Day2;
+
+public class program1 {
+	    public static void main(String[] args) {
+	        
+	        int n1 = 6, n2 = 12, gcd = 0;
+	        
+	    
+	        for (int i = 1; i <= n1 && i <= n2; i++) {
+	            if (n1 % i == 0 && n2 % i == 0) {
+	                gcd = i;
+	            }
+	        }
+	        
+	        
+	        int lcm = (n1 * n2) / gcd;
+	        
+	       
+	        System.out.println("The GCD of " + n1 + " and " + n2 + " is: " + gcd);
+	        System.out.println("The LCM of " + n1 + " and " + n2 + " is: " + lcm);
+	    }
+	}
+
